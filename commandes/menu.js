@@ -34,7 +34,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭──────────────────❂
-┊❂╭───*ANYWAY-MD*────❂
+┊❂╭───*𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃*────❂
 ┊✺┊ *User* : ${s.OWNER_NAME}
 ┊✺┊ *Mode* : ${mode}
 ┊✺╰───────────────❂
@@ -44,7 +44,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰──────────────────❂ \n\n`;
  
     let menuMsg=`  
-  **ANYWAY MD COMMANDS*
+  **𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓*
 `;
 
     for (const cat in coms) {
@@ -61,7 +61,7 @@ const date = moment().format('DD/MM/YYYY');
 ◇            ◇
 *—————✺✺✺✺—————*
 
-  *ANYWAY-MD*                                         
+  *𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃*                                         
 *╰═════════════❂*
 `;
 
@@ -69,7 +69,7 @@ const date = moment().format('DD/MM/YYYY');
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐌𝐃*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
