@@ -2,12 +2,12 @@
   
 
 
-<p align="center">                                                  𝗔𝗡𝗬𝗪𝗔𝗬 𝗠𝗗-𝗩𝟭 
+<p align="center">                                                           𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃 
   
 
 </p>
 <p align="center"> 
-  <a href="https://whatsapp.com/channel/0029VagWQ255q08VTCRQKP09">
+  <a href="https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31">
     <img alt=Support height="390" src="https://i.imgur.com/hEfoYiL.jpeg"> 
     </p>
  
@@ -15,7 +15,7 @@
  
 
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=THIS+IS+ANYWAY-MD+MADE+IN+TANZANIA+🇹🇿♥️🇹🇿" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=𝐓𝐇𝐈𝐒+𝐈𝐒+𝐖𝐀𝐓𝐒𝐀𝐏𝐏-𝐁𝐎𝐓+𝐌𝐀𝐃𝐄+𝐁𝐘+𝐓𝐈𝐌𝐍𝐀𝐒𝐀+¶∆♥️🇹🇿" alt="Typing SVG" /></a>
 
 
 
@@ -25,7 +25,7 @@
 #### SETUP 
 
 
-[`FORK`](https://github.com/SIMON32883/MR-ANYWAY-MD/fork)
+[`FORK`](https://github.com/Next5x/TIMNASA_TMD1/fork)
 
 
  
@@ -45,7 +45,7 @@
 
 2. `If You Have a Heroku Account`
 
-  - <a align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/SIMON32883/MR-ANYWAY-MD"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+  - <a align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Next5x/TIMNASA_TMD1"> <img src="https://img.shields.io/badge/DEPLOY%20NOW-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 #### DEPLOY ON RENDER 
