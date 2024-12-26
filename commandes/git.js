@@ -34,31 +34,31 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-   *TOSH MD IMPORTANT INFO* 
+   *𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃 𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓 𝐈𝐍𝐅𝐎* 
 ❒───────────────────❒
-*GITHUB LINK*
-> https://github.com/SIMON32883/MR-ANYWAY-MD
+*𝐆𝐈𝐓𝐇𝐔𝐁𝐔 𝐋𝐈𝐍𝐊*
+> https://github.com/Next5x/TIMNASA_TMD1
 
-*WHATSAPP GROUP*
-> https://whatsapp.com/channel/0029Vail87sIyPtQoZ2egl1h
+*𝐖𝐇𝐀𝐓𝐒𝐒𝐀𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋*
+> https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
 ⁠
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV1* : *Mr anyway*
-│❒⁠⁠⁠⁠ *DEV2* : *Baraka Bega*
+│❒⁠⁠⁠⁠ *DEV1* : *Timnasa tmd*
+│❒⁠⁠⁠⁠ *DEV2* : *fredie1*
 ⁠⁠⁠⁠╰───────────────────❒
   `;
     
 let menuMsg = `
-     *Anyway Tech*
+     *𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃*
 
-❒────────────────────❒`;
+❒───────𝐓𝐌𝐃─𝐓𝐈𝐌𝐍𝐀𝐒𝐀────────────❒`;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝐓𝐈𝐌𝐍𝐀𝐒𝐀𝐓𝐌𝐃*, déveloper 𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
