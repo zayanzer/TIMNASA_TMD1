@@ -43,7 +43,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *ANYWAY-MD-WABOT*`
+ *𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃-𝐁𝐎𝐓*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -66,7 +66,7 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
 } 
 else {
     
-    repondre(alivemsg);
+    repondre(alivemsg 𝐓𝐎 𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐌𝐃);
     
 }
 
@@ -88,7 +88,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre(' Holla🥴, *ANYWAY-MD BOT* is alive just like you gee. ')
+repondre(' Holla🥴, *𝐓𝐈𝐌𝐍𝐀𝐒𝐀_𝐓𝐌𝐃* is alive just like you gee. ')
 
 }
     });
