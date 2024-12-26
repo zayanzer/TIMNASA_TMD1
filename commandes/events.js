@@ -30,4 +30,8 @@ async function events(nomCom) {
 events('welcome');
 events('goodbye');
 events('antipromote');
-events('antidemote') ;
+events('antilink') ;
+events('antikill') ;
+events('antidelete') ;
+events('promote') ;
+
