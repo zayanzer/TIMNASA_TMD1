@@ -6,7 +6,7 @@ const {zokou}=require("../framework/zokou")
 
 
 
-zokou({nomCom:"restart",categorie:"Mods",reaction:"📴"},async(dest,z,com)=>{
+zokou({nomCom:"2025",categorie:"Mods",reaction:"📴"},async(dest,z,com)=>{
 
 
   
@@ -19,7 +19,7 @@ const{repondre,ms,dev,superUser}=com;
 
   const {exec}=require("child_process")
 
-    repondre("ANYWAY-MD bot Restarting ⏳");
+    repondre("Timnasa is come back again bot Restarting ⏳");
 
   exec("pm2 restart all");
   
