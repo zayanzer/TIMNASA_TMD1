@@ -1,6 +1,5 @@
-<a><img src='https://i.imgur.com/LyHic3i.gif
-                      /></a>    src='https://files.catbox.moe/5ixvs8.jpg'/></a>
-  
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
 <p align="center">                                                           𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃 
