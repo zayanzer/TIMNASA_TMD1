@@ -36,7 +36,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 zokou({
-  nomCom: "google",
+  nomCom: "go",
   categorie: "Search"
 }, async (dest, zk, commandeOptions) => {
   const { arg, repondre } = commandeOptions;
