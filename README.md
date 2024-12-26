@@ -1,4 +1,4 @@
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://files.catbox.moe/lzasdm.jpg'/></a>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://files.catbox.moe/5ixvs8.jpg'/></a>
   
 
 
@@ -8,7 +8,7 @@
 </p>
 <p align="center"> 
   <a href="https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31">
-    <img alt=Support height="390" src="https://files.catbox.moe/lzasdm.jpg"> 
+    <img alt=Support height="390" src="https://i.imgur.com/LyHic3i.gif"> 
     </p>
  
  
