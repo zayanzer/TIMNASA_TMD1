@@ -1,9 +1,9 @@
 {
-  "name":"ANYWAY-MD-V1",
-  "description":"Best whatsapp bot developed by mr anyway ",
+  "name":"TIMNASA-TMD",
+  "description":"Best whatsapp bot developed by TIMNASA TMD",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://i.imgur.com/G5u9emw.jpeg",
-  "repository":"https://github.com/SIMON32883/MR-ANYWAY-MD",
+  "logo":"https://files.catbox.moe/5ixvs8.jpg",
+  "repository":"https://github.com/Next5x/TIMNASA_TMD1",
   "succes_url":"/",
   "stack":"container",
   "env":{
@@ -47,14 +47,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"-ANYWAY-MD",
+      "value":"-TIMNASA-TMD1",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.imgur.com/G5u9emw.jpeg",
+      "value":"https://files.catbox.moe/5ixvs8.jpg",
       "required":false
        
      },
@@ -86,20 +86,20 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Mr Anyway"
+    "value": "TIMNASA TMD1"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255678892560"
+    "value": "255784766591"
   },
     "WARN_COUNT":
   {
     "desc": "this is the limit of warn for warning commandes",
     "required": false,
-    "value": "3"
+    "value": "2"
   },
   "STARTING_BOT_MESSAGE":
   {
