@@ -31,7 +31,7 @@
  
 
 
-[`PAIRING CODE`](https://Next5-session-1.onrender.com)
+[`PAIRING CODE`](https://TIMNAS-session-1.onrender.com)
  
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
