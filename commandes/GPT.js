@@ -4,7 +4,7 @@ const s = require('../set');
 const axios = require('axios');
 
 /* 
-Created By anyway tech
+Created By Timnasa tech
 Don't claim, okey 
 */
 
@@ -33,7 +33,7 @@ async function gpt4(q) {
       {
         "id": "0aqernpzbas7",
         "role": "assistant",
-        "content": "Hi! How can I help you?",
+        "content": "Hi! How can I help you? timnasa",
         "who": "AI: ",
         "timestamp": 1719360952775
       }
