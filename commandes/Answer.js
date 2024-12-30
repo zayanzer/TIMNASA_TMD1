@@ -73,12 +73,12 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
     }
   });
   
-  zokou({ nomCom: "gpt2", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  zokou({ nomCom: "timnasa", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
       if (!arg || arg.length === 0) {
-        return repondre(`Please ask a me any thing.`);
+        return repondre(`Please support my channel 👉https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31 and asked your question.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
