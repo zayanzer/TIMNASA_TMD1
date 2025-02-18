@@ -14,7 +14,7 @@ const s = require(__dirname + "/../set");
 
 
 
-zokou({ nomCom: "menu2", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu3", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
 
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
 
@@ -67,7 +67,7 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
 
 ╔════➻⊷➻════──❂
-║ ⦿━═━❖ *𝔹𝕆ℕ𝕀ℙℍ𝔸ℂ𝔼 𝕄𝔻* ❖━═━⦿
+║ ⦿━═━❖ * 𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃* ❖━═━⦿
 ║ ┃✯𝕄𝕠𝕕𝕖: ${mode}
 ║ ┃✯𝕌𝕤𝕖𝕣 : ${s.OWNER_NAME}
 ║ ┃✯𝕃𝕚𝕓𝕣𝕒𝕣𝕪 : Baileys
@@ -86,7 +86,7 @@ const date = moment().format('DD/MM/YYYY');
 let menuMsg = `
 ╭──━━✣━━────❍ 
 │╔════➳════╗
-│║❖ _*𝔹𝕆ℕ𝕀ℙℍ𝔸ℂ𝔼 𝕋𝔼ℂℍ*_
+│║❖ _*𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐄𝐂𝐇*_
 │╚════➳════╝
 ╰──━━✣━━────❍\n
 
@@ -109,7 +109,7 @@ let menuMsg = `
         menuMsg += `
 ╚══━━━━════───➳
 ❍══════✣══════❍ 
-║❖❖❖❖❖❖❖❖❖❖❖║
+║❖❖❖❖𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐄𝐂𝐇❖❖❖❖║
 ❍══════✣══════❍ 
 ✣━━━━━━━━━━━━━✣\n`
 
@@ -121,12 +121,12 @@ let menuMsg = `
 
 
  ❖═══════════════❖
- ║✣ _*𝔹𝕠𝕟𝕚𝕡𝕙𝕒𝕔𝕖 𝕞𝕕 𝟚𝟘𝟚𝟜*_
+ ║✣ _*𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐌𝐃 @2025*_
  ║✣ _*𝕖𝕟𝕛𝕠𝕪 𝕝𝕚𝕗𝕖*_ 
  ❖═══════════════❖
  ❍━━━━═══════━━━━❍ 
  ┃╔══════════════╗
- ┃║❖ _*𝕡𝕠𝕨𝕖𝕣𝕖𝕕 𝕓𝕪 𓆏𝔹𝕠𝕟𝕚𝕡𝕙𝕒𝕔𝕖 𝕋𝕖𝕒𝕞𓆏*_
+ ┃║❖ _*𝕡𝕠𝕨𝕖𝕣𝕖𝕕 𝕓𝕪 𖣘𝕋𝕀𝕞𝕟𝕒𝕤𝕒 𝕋𝕖𝕔𝕙𖣘*_
  ┃╚══════════════╝
  ❍━━━━═══════━━━━❍ \n
 
@@ -143,7 +143,7 @@ let menuMsg = `
 
     try {
 
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *TKM-BOT*, déveloper Cod3uchiha" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *TIMNASA TMD*, déveloper Cod3uchiha" , gifPlayback : true }, { quoted: ms });
 
     }
 
@@ -163,7 +163,7 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
 
     try {
 
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *TKM-bot*, déveloper cod3uchiha" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𖣘TIMNASA MD𖣘*, déveloper cod3uchiha" }, { quoted: ms });
 
     }
 
