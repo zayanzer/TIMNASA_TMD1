@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-zokou({ nomCom: "menu2", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menux", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -20,41 +20,61 @@ zokou({ nomCom: "menu2", categorie: "General" }, async (dest, zk, commandeOption
 
 
     
-
-    cm.map(async (com, index) => {
+ cm.map(async (com, index) => {
         if (!coms[com.categorie])
             coms[com.categorie] = [];
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('Etc/GMT');
+    moment.tz.setDefault('EAT');
 
-// Créer une date et une heure en GMT
+// Créer une date et une heure en EAT
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*TIMNASA MD AVAILABLE MENUS* 
+╭━━━━━━━━━━━━━━━⊷
+┃✇╭───────────⊷
+┃✇│◎ 𝙾𝚠𝚗𝚎𝚛 : ${s.OWNER_NAME}
+┃✇│◎ 𝙿𝚛𝚎𝚏𝚒𝚡 : [ ${s.PREFIXE} ]
+┃✇│◎ 𝙼𝚘𝚍𝚎 : ${mode}
+┃✇│◎ 𝚁𝚊𝚖  : 8/132 GB
+┃✇│◎ 𝙳𝚊𝚝𝚎  : ${date}
+┃✇│◎ 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
+┃✇│◎ 𝙲𝚛𝚎𝚊𝚝𝚘𝚛 : timnasha 
+┃✇│◎ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
+┃✇│◎ 𝚃𝚑𝚎𝚖𝚎 : TMD
+┃✇└───────────⊷
+╰━━━━━━━━━━━━━━━⊷\n
 
 
-    ▸ *commander* : ${cm.length} 
-    ▸ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-    ▸ *uptime* : ${os.platform()}
-    ▸ *theme* : *𝚃𝙼𝙽𝙰𝚂𝙰 𝙼𝙳*
+               •••${readmore}
+ 
+    let menuMsg=`  
+  **𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓*
+`;
 
-> 𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳
-> 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗜𝗠𝗡𝗔𝗦𝗔-𝗧𝗠𝗗 ✇⌫\n${readmore}`;
-    
-let menuMsg = `
-> Hello ${nomAuteurMessage},,, Type menu2 to access a list of commands. 
-  
-╰───────────────────⏣`;
+    for (const cat in coms) {
+        menuMsg += `╭━━〔 *${cat}* 〕━┈⊷
+┃◈╭────────────·๏`;
+        for (const cmd of coms[cat]) {
+            menuMsg += `  
+┃◈│ ${cmd}`;
+        }
+        menuMsg += `
+┃◈└───────────┈⊷
+╰━━━━━━━━━━━━━━━⊷ \n`
+    }
+
+    menuMsg += `
+  𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃      
+`;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐌𝐃*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -64,7 +84,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *BONIPHACE MD👑*, déveloper BONIPHACE TECH" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*Ibrahim-tech*" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -77,4 +97,4 @@ else {
     
 }
 
-}); 
+});
