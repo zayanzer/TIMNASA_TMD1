@@ -1,7 +1,7 @@
 const { ezra } = require("../fredi/ezra");
 const axios = require("axios");
 
-ezra({ nomCom: "logo", categorie: "Search", reaction: "🍂" }, async (dest, zk, commandeOptions) => {
+ezra({ nomCom: "logo", categorie: "Search", reaction: "🧞" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
   const text = arg.join(" ");
 
@@ -61,19 +61,19 @@ ezra({ nomCom: "logo", categorie: "Search", reaction: "🍂" }, async (dest, zk,
 45⊷ Typography maker
 46⊷ Incandescent
 47⊷ Cartoon style graffiti 
-48⊷ Galaxy ❤️‍🔥
+48⊷ Galaxy 🍍🍌
 49⊷ Anonymous hacker (avatar cyan neon)
 50⊷ Birthday cake
 
-*Stay connected 😊🤦*`;
+*Stay connected 🧀🍞*`;
 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "🍂 𝐋𝐔𝐂𝐊𝐘-𝚳𝐃 🤦",
-        body: "Regards, Frediezra",
-        thumbnailUrl: "https://files.catbox.moe/7irwqn.jpeg",
-        sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
+        title: "🍓 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐌𝐃 🍓",
+        body: "Regards, Timnasa-tech",
+        thumbnailUrl: "https://i.ibb.co/pr5qVzvh/hanstz.jpg",
+        sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
         mediaType: 1,
         renderLargerThumbnail: true,
       },
@@ -258,7 +258,7 @@ ezra({ nomCom: "logo", categorie: "Search", reaction: "🍂" }, async (dest, zk,
         if (logoUrl) {
           await zk.sendMessage(dest, {
             image: { url: logoUrl },
-            caption: `*Created logo by Lucky Md*`,
+            caption: `*Created logo by TIMNASA TMD*`,
           }, { quoted: ms });
         }
       }
@@ -277,7 +277,7 @@ const fetchLogoUrl = async (url, name) => {
     });
     return response.data.result.download_url;
   } catch (error) {
-    console.error("Error fetching logo:", error);
+    console.error("Error timnasa fetching logo:", error);
     return null;
   }
 };
