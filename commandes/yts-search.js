@@ -21,7 +21,7 @@ zokou({ nomCom: "yts", categorie: "Search", reaction: "🐅" }, async (dest, zk,
 for (let i = 0; i < 15; i++) {
   captions += `𝑩𝒖𝒈𝒂𝒕𝒕𝒊\n${i + 1}. Title: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
 }
-    captions += "\n======\n*LUCKY MD 𝑩𝒖𝒈𝒂𝒕𝒕𝒊*";
+    captions += "\n======\n*𝗧𝗜𝗠 𝗔𝗦𝗔 𝗧𝗠𝗗*";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
