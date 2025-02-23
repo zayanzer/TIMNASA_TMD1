@@ -28,7 +28,7 @@ async function loading(dest, zk) {
     "⬜⬜⬛⬛⬛⬛⬜⬜꧁60%꧂",
     "⬜⬜⬜⬜⬛⬛⬛⬛꧁80%꧂",
     "⬛⬛⬜⬜⬜⬜⬛⬛꧁100%꧂",
-    "*L҉O҉A҉D҉I҉N҉G҉ D҉O҉N҉E҉ ᵗʱᵃᵑᵏᵧₒᵤ ⚔️🗡️*"
+    "* 𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝙸𝚂-𝟿𝟿𝟿𝟿𝟿𝟿𝟿𝟿-𝚂𝙿𝙴𝙴𝙳⚔️🗡️*"
   ];
 
   let { key } = await zk.sendMessage(dest, { text: 'Loading Please Wait' });
@@ -40,7 +40,7 @@ async function loading(dest, zk) {
 }
 
 zokou({
-  nomCom: "test2",
+  nomCom: "alive1",
   aliases: ["alive", "testing"],
   categorie: "system",
   reaction: "⚔️"
@@ -81,7 +81,7 @@ zokou({
     fileName: 'shizo',
     contextInfo: {
       externalAdReply: {
-        title: '𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘 𝗠𝗢𝗧𝗛𝗘𝗥𝗙𝗨𝗖𝗞𝗘𝗥',
+        title: '𝗧𝗜𝗠𝗡𝗔𝗦𝗔 𝗠𝗗 𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘 𝗠𝗢𝗧𝗛𝗘𝗥𝗙𝗨𝗖𝗞𝗘𝗥',
         body: conf.OWNER_NAME,
         thumbnailUrl: conf.URL,
         sourceUrl: conf.GURL, // Corrected variable name
@@ -394,7 +394,7 @@ zokou({
 });
 
 zokou({
-  nomCom: "fetch",
+  nomCom: "urlget",
   aliases: ["get", "find"],
   categorie: "system",
   reaction: '🛄',
