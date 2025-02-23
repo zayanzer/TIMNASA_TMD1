@@ -4,7 +4,7 @@ const { fetchJson } = require("../lib/functions");
 cmd({
   pattern: "logo",
   desc: "Create logos",
-  react: '🎗',
+  react: '🔋',
   category: "other",
   filename: __filename
 }, async (conn, message, store, { 
@@ -18,7 +18,7 @@ cmd({
       return reply("*_Please give me a text._*");
     }
 
-    let responseText = `*🤍 KHAN-MD LOGO MAKER 💫*\n\n`
+    let responseText = `*🌚 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐋𝐎𝐆𝐎 𝐌𝐀𝐊𝐄𝐑 🌚*\n\n`
     + `╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼➻\n`
     + `*◈ Text:* ${q}\n`
     + `╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼➻\n\n`
@@ -43,7 +43,7 @@ cmd({
     + `18 ➠ 3D Foil Balloons\n`
     + `19 ➠ 3D Colourful Paint\n`
     + `20 ➠ American Flag 3D\n\n`
-    + `> *© Powered By JawadTechX*`;
+    + `> *© 𝚕𝚘𝚐𝚘 𝚒𝚜 𝚌𝚛𝚎𝚊𝚝𝚎𝚍 𝚋𝚢 ✇𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙴𝙲𝙷✇*`;
 
     let sentMessage = await conn.sendMessage(from, { text: responseText, mentions: [sender] }, { quoted });
 
