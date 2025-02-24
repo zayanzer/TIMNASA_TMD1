@@ -66,7 +66,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭────✧${s.BOT}✧────◆
-𝐁𝐎𝐍𝐈𝐏𝐇𝐀𝐂𝐄~𝐌𝐃
+𝐓𝐈𝐌𝐍𝐀𝐒𝐀~𝐓𝐌𝐃
      ╭──────────────
 |❏│   *_Prefix_* : ${s.PREFIXE}
 |❏│   *_Propriétaire_* : ${s.OWNER_NAME}
@@ -76,16 +76,16 @@ const date = moment().format('DD/MM/YYYY');
 |❏│   *_Hour_* : ${temps}
 |❏│   *_RAM_* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 |❏│   *_Plateforme_* : ${os.platform()}
-|❏│   *_Developer_* : *𝐁𝐎𝐍𝐈𝐏𝐇𝐀𝐂𝐄~𝐓𝐄𝐂𝐇*
-|❏│   *_Nation_ : 𝐓𝐀𝐍𝐙𝐀𝐍𝐈𝐀*
+|❏│   *_Developer_* : *𝐓𝐌𝐍𝐀𝐒𝐀~𝐓𝐌𝐃*
+|❏│   *_Nation_ : 𝐓𝐀𝐍𝐙𝐀𝐍𝐈𝐀🇹🇿*
 |❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 𝘝10.0.0
     ╰───────────────
-╰─────✧𝐁𝐎𝐍𝐈𝐏𝐇𝐀𝐂𝐄~𝐌𝐃✧─────◆ \n\n`;
+╰─────✧𝐓𝐈𝐌𝐍𝐀𝐒𝐀~𝐓𝐌𝐃✧─────◆ \n\n`;
     
     let menuMsg = `
-👋 𝐎𝐳𝐚𝐚𝐚𝐚 ${nomAuteurMessage}, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐁𝐎𝐍𝐈𝐏𝐇𝐀𝐂𝐄~𝐌𝐃 👋
+👋 𝐎𝐳𝐚𝐚𝐚𝐚 ${nomAuteurMessage}, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃 👋
 
-*𝐈'𝐌 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐎𝐍𝐈𝐏𝐇𝐀𝐂𝐄:*
+*𝐈'𝐌 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃:*
 ◇                             ◇
 `;
 
@@ -107,7 +107,7 @@ const date = moment().format('DD/MM/YYYY');
             menuMsg += `╭────🇹🇿${cat} ❏ ✧────`;
             for (const cmd of coms[cat]) {
                 menuMsg += `
-*☞︎︎︎ ${cmd}*`;
+*🇹🇿 ${cmd}*`;
             }
             menuMsg += `
 ╰═════════════⊷ \n`;
@@ -117,9 +117,9 @@ const date = moment().format('DD/MM/YYYY');
     menuMsg += `
 ◇            ◇
 *»»————— ★ —————««*
-" 𓅓𓅓𓅓𓅓𓅓𓅓𓅓𓅓."
+" 𝐓𝐄𝐂𝐇 𝐃𝐄𝐓𝐄𝐒𝐓𝐄𝐃 𝐓𝐈𝐌𝐍𝐀𝐒𝐀."
  
-    *𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐛𝐲 𝐁𝐎𝐍𝐈𝐏𝐇𝐀𝐂𝐄 𝐓𝐄𝐀𝐌*
+    *𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐛𝐲 𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐄𝐀𝐌*
 *»»—————    ★   —————««*
 `;
 
@@ -127,14 +127,14 @@ const date = moment().format('DD/MM/YYYY');
 
     if (lien.match(/\.(mp4|gif)$/i)) {
         try {
-            zk.sendMessage(dest, { video: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *Boniphace-MD*, développé par BONIPHACE-TECH" , gifPlayback : true }, { quoted: ms });
+            zk.sendMessage(dest, { video: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *TIMNASA-MD*, développé par 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐄𝐂𝐇" , gifPlayback : true }, { quoted: ms });
         } catch (e) {
             console.log("🥵🥵 Menu erreur " + e);
             repondre("🥵🥵 Menu erreur " + e);
         }
     } else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
         try {
-            zk.sendMessage(dest, { image: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *Boniphace-MD*, développé par BONIPHACE-TECH" }, { quoted: ms });
+            zk.sendMessage(dest, { image: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *TIMNASA-MD*, développé par TIMNASA-TECH" }, { quoted: ms });
         } catch (e) {
             console.log("🥵🥵 Menu erreur " + e);
             repondre("🥵🥵 Menu erreur " + e);
