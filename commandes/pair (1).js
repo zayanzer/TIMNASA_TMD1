@@ -5,7 +5,7 @@ const {
   default: axios
 } = require("axios");
 ezra({
-  'nomCom': "code1",
+  'nomCom': "pair",
   'aliases': ["session", "pair", "paircode", "qrcode"],
   'reaction': '♂️',
   'categorie': "General"
