@@ -77,7 +77,7 @@ const date = moment().format('DD/MM/YYYY');
 |❏│   *_RAM_* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 |❏│   *_Plateforme_* : ${os.platform()}
 |❏│   *_Developer_* : *𝐓𝐌𝐍𝐀𝐒𝐀~𝐓𝐌𝐃*
-|❏│   *_Nation_ : 𝐓𝐀𝐍𝐙𝐀𝐍𝐈𝐀🇹🇿*
+|❏│   *_Nation_ : 𝐓𝐀𝐍𝐙𝐀𝐍𝐈𝐀✟*
 |❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 𝘝10.0.0
     ╰───────────────
 ╰─────✧𝐓𝐈𝐌𝐍𝐀𝐒𝐀~𝐓𝐌𝐃✧─────◆ \n\n`;
@@ -92,7 +92,7 @@ const date = moment().format('DD/MM/YYYY');
     if (commandeOptions.categorie) {
         const categorieSelectionnee = commandeOptions.categorie;
         if (coms[categorieSelectionnee]) {
-            menuMsg += `╭────🇹🇿${categorieSelectionnee} ❏ ✧────`;
+            menuMsg += `╭────🇹༒𖣘${categorieSelectionnee} ❏ ✧────`;
             for (const cmd of coms[categorieSelectionnee]) {
                 menuMsg += `
 *☞︎︎︎ ${cmd}*`;
@@ -104,10 +104,10 @@ const date = moment().format('DD/MM/YYYY');
         }
     } else {
         for (const cat in coms) {
-            menuMsg += `╭────🇹🇿${cat} ❏ ✧────`;
+            menuMsg += `╭────🇹༒𖣘${cat} ❏ ✧────`;
             for (const cmd of coms[cat]) {
                 menuMsg += `
-*🇹🇿 ${cmd}*`;
+*༒𖣘 ${cmd}*`;
             }
             menuMsg += `
 ╰═════════════⊷ \n`;
