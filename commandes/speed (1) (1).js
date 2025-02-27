@@ -24,7 +24,7 @@ zokou({
       'title': "TIMNASA_TIMD My Ultra Speed Response",
       'body': "Ping Results : " + _0x451c3b,
       'sourceUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
-      'thumbnailUrl': "https://i.ibb.co/1fXhfhB2/temp-image.jpg",
+      'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
       'mediaType': 0x1,
       'showAdAttribution': true
     }
@@ -62,7 +62,7 @@ zokou({
       'title': "TIMNASA- System Uptime",
       'body': "Bot has been running for: " + _0x2f3abc,
       'sourceUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
-      'thumbnailUrl': "https://i.ibb.co/1fXhfhB2/temp-image.jpg",
+      'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
       'mediaType': 0x1,
       'showAdAttribution': true
     }
