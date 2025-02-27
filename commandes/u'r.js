@@ -1,113 +1,52 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
-const fetch = require("node-fetch");
-const FormData = require("form-data");
-const { fileTypeFromBuffer } = require("file-type");
-const { unlink } = require("fs/promises");
+const { adams } = require("../Ibrahim/adams");
 
-const MAX_FILE_SIZE_MB = 200;
+adams({ nomCom: "vt", categorie: "General", reaction: "😅" }, async (dest, zk, commandeOptions) => {
+    const { ms, msgRepondu, repondre } = commandeOptions;
 
-async function uploadMedia(buffer) {
-  try {
-    const { ext } = await fileTypeFromBuffer(buffer);
-    const bodyForm = new FormData();
-    bodyForm.append("fileToUpload", buffer, "file." + ext);
-    bodyForm.append("reqtype", "fileupload");
-
-    const res = await fetch("https://catbox.moe/user/api.php", {
-      method: "POST",
-      body: bodyForm,
-    });
-
-    if (!res.ok) {
-      throw new Error(`Upload failed with status ${res.status}: ${res.statusText}`);
+    // Check if the user replied to a message
+    if (!msgRepondu) {
+        return repondre("*Mention a view-once media message to open it.*");
     }
 
-    const data = await res.text();
-    return data;
-  } catch (error) {
-    console.error("Error during media upload:", error);
-    throw new Error('Failed to upload media');
-  }
-}
-
-// hansurl command function to handle media upload via zokou
-zokou({
-  nomCom: "anywayurl", // Command name
-  reaction: "👊", 
-  nomFichier: __filename 
-}, async (dest, zk, commandeOptions) => {
-
-  const prefixMatch = dest.match(/^[\\/!#.]/);
-  const prefix = prefixMatch ? prefixMatch[0] : '/';
-  const cmd = dest.startsWith(prefix) ? dest.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-
-  if (cmd === 'anywayurl') {
-    if (!zk.quoted || !['imageMessage', 'videoMessage', 'audioMessage'].includes(zk.quoted.mtype)) {
-      return zk.sendMessage(dest, { text: `Send/Reply/Quote an image, video, or audio to upload \n*${prefix + cmd}*` });
+    // Detect if the replied-to message is a view-once message
+    const viewOnceMsg = msgRepondu.viewOnceMessageV2?.message;
+    if (viewOnceMsg) {
+        try {
+            // Handle view-once image messages
+            if (viewOnceMsg.imageMessage) {
+                const imagePath = await zk.downloadAndSaveMediaMessage(viewOnceMsg.imageMessage); // Download image
+                const caption = viewOnceMsg.imageMessage.caption || ""; // Get the caption if available
+                await zk.sendMessage(dest, {
+                    image: { url: imagePath },
+                    caption: caption,
+                }, { quoted: ms });
+            }
+            // Handle view-once video messages
+            else if (viewOnceMsg.videoMessage) {
+                const videoPath = await zk.downloadAndSaveMediaMessage(viewOnceMsg.videoMessage); // Download video
+                const caption = viewOnceMsg.videoMessage.caption || ""; // Get the caption if available
+                await zk.sendMessage(dest, {
+                    video: { url: videoPath },
+                    caption: caption,
+                }, { quoted: ms });
+            }
+            // Handle view-once audio messages
+            else if (viewOnceMsg.audioMessage) {
+                const audioPath = await zk.downloadAndSaveMediaMessage(viewOnceMsg.audioMessage); // Download audio
+                await zk.sendMessage(dest, {
+                    audio: { url: audioPath },
+                    ptt: true, // Send as a voice message
+                }, { quoted: ms });
+            } else {
+                // If no supported media type is detected
+                return repondre("*This view-once media type is not supported.*");
+            }
+        } catch (error) {
+            console.error("Error processing view-once message:", error);
+            return repondre("*Failed to process the view-once message. Please try again.*");
+        }
+    } else {
+        // If the message is not a view-once message
+        return repondre("*The mentioned message is not a view-once message.*");
     }
-
-    try {
-      const loadingMessages = [
-        "*「▰▰▰▱▱▱▱▱▱▱」*",
-        "*「▰▰▰▰▱▱▱▱▱▱」*",
-        "*「▰▰▰▰▰▱▱▱▱▱」*",
-        "*「▰▰▰▰▰▰▱▱▱▱」*",
-        "*「▰▰▰▰▰▰▰▱▱▱」*",
-        "*「▰▰▰▰▰▰▰▰▱▱」*",
-        "*「▰▰▰▰▰▰▰▰▰▱」*",
-        "*「▰▰▰▰▰▰▰▰▰▰」*",
-      ];
-
-      const loadingMessageCount = loadingMessages.length;
-      let currentMessageIndex = 0;
-
-      const { key } = await zk.sendMessage(dest, { text: loadingMessages[currentMessageIndex] });
-
-      const loadingInterval = setInterval(() => {
-        currentMessageIndex = (currentMessageIndex + 1) % loadingMessageCount;
-        zk.sendMessage(dest, { text: loadingMessages[currentMessageIndex] }, { messageId: key });
-      }, 500);
-
-      const media = await zk.quoted.download();
-      if (!media) throw new Error('Failed to download media.');
-
-      const fileSizeMB = media.length / (1024 * 1024);
-      if (fileSizeMB > MAX_FILE_SIZE_MB) {
-        clearInterval(loadingInterval);
-        return zk.sendMessage(dest, { text: `File size exceeds the limit of ${MAX_FILE_SIZE_MB}MB.` });
-      }
-
-      const mediaUrl = await uploadMedia(media);
-
-      clearInterval(loadingInterval);
-      await zk.sendMessage(dest, { text: '✅ Loading complete.' });
-
-      const mediaType = getMediaType(zk.quoted.mtype);
-      if (mediaType === 'audio') {
-        await zk.sendMessage(dest, { text: `*Hey ${dest} Here Is Your Audio URL*\n*Url:* ${mediaUrl}` });
-      } else {
-        await zk.sendMessage(dest, { [mediaType]: { url: mediaUrl }, caption: `*Hey ${dest} Here Is Your Media*\n*Url:* ${mediaUrl}` });
-      }
-
-    } catch (error) {
-      console.error('Error processing media:', error);
-      zk.sendMessage(dest, { text: 'Error processing media.' });
-    }
-  }
 });
-
-// Helper function to determine media type
-const getMediaType = (mtype) => {
-  switch (mtype) {
-    case 'imageMessage':
-      return 'image';
-    case 'videoMessage':
-      return 'video';
-    case 'audioMessage':
-      return 'audio';
-    default:
-      return null;
-  }
-};
