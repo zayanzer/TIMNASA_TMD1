@@ -34,7 +34,7 @@ zokou({
     'vcard': "BEGIN:VCARD\nVERSION:3.0\nFN: TIMNASA MD\nORG: TIMNASA Nexus;\nTEL;type=CELL;type=VOICE;waid=255784766591:+255 756469954 977\nEND:VCARD"
   };
   await _0x41d5d3.sendMessage(_0x4cfdc6, {
-    'text': "🚀 *TIMNASA-TMD* ☠️",
+    'text': "timnasa-m͟d͟-speeed-is🚀999999999🚀..",
     'contextInfo': _0x41d2b1,
     'contacts': {
       'displayName': "TIMNASA-TMD Verified Contact",
@@ -75,7 +75,7 @@ zokou({
     'text': "*𝗧𝗜𝗠𝗡𝗔𝗦𝗔-𝗧𝗠𝗗🚀 UPTIME* " + _0x2f3abc,
     'contextInfo': _0xae590,
     'contacts': {
-      'displayName': "𝗧𝗜𝗠𝗡𝗔𝗦𝗔-𝗧𝗠𝗗 Verified Contact",
+      'displayName': "timnasa-m͟d͟-speeed-is🚀999999999🚀..",
       'contacts': [_0x297b69]
     },
     'quoted': _0x4e9ae0
