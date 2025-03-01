@@ -1,6 +1,6 @@
 const {
-  ezra
-} = require("../fredi/ezra");
+  zonku
+} = require("../framework/zokou");
 const {
   default: axios
 } = require("axios");
@@ -16,7 +16,7 @@ ezra({
   } = _0x32de8a;
   try {
     if (!_0x8621a4 || _0x8621a4.length === 0) {
-      return _0x2e61d5("Example Usage: .code 255756xxxx.");
+      return _0x2e61d5("Example Usage: .code 255784766591xxxx.");
     }
     await _0x2e61d5("*Wait am generating your pair code ✅...*");
     const _0x386b0a = encodeURIComponent(_0x8621a4.join(" "));
