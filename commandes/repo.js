@@ -30,7 +30,7 @@ const fetchGitHubRepoDetails = async () => {
     return null;
   }
 };
-const commands = ["git", "repo", "mchuga", "frezra", "ezrafre", "last", "liverpool", "anfield", "script", 'cs'];
+const commands = ["git", "repo", "trepo", 'cs'];
 commands.forEach(_0x30efd7 => {
   zokou({
     'nomCom': _0x30efd7,
@@ -62,7 +62,7 @@ commands.forEach(_0x30efd7 => {
           'externalAdReply': {
             'title': "🤝 Stay Updated with timnasha",
             'body': "Tap here for the latest updates!",
-            'thumbnailUrl': "https://catbox.moe/bz9tzi.jpg",
+            'thumbnailUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
             'mediaType': 0x1,
             'renderLargerThumbnail': true,
             'mediaUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
