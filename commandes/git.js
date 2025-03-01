@@ -45,7 +45,7 @@ const date = moment().format('DD/MM/YYYY');
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │❒⁠⁠⁠⁠ *DEV1* : *Timnasa tmd*
-│❒⁠⁠⁠⁠ *DEV2* : *fredie1*
+│❒⁠⁠⁠⁠ *DEV2* : *only is timnasa*
 ⁠⁠⁠⁠╰───────────────────❒
   `;
     
