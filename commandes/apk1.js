@@ -7,7 +7,7 @@ const gis = require('g-i-s');
 
 
 zokou({
-  'nomCom': 'apk1',
+  'nomCom': 'apk',
   'aliases': ['app', 'playstore'],
   'reaction': '🉑',
   'categorie': 'Download'
