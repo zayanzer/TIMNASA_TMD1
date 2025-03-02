@@ -36,7 +36,7 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
 > *Hellow Pal Here is How To Deploy Your Own Bot*
 > *Tap on the link to get session* 
-> *https://shorturl.at/9WfYs*
+> *https://timnasa-md42.onrender.com/*
  
  *STEPS TO GET SESSION*
  *1. Open link above*
@@ -48,14 +48,14 @@ const date = moment().format('DD/MM/YYYY');
  `;
     
 let menuMsg = `
-> *Made by : Njabulo JB™*
+> *Made by : 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐓𝐌𝐃™*
 `;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Bugatti*, déveloper Marisel" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Bugatti*, déveloper 𝐓𝐈𝐌𝐍𝐀𝐒𝐀-2" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -65,7 +65,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Bugatti*, déveloper Marisel" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Bugatti*, déveloper timnasa" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
