@@ -6,12 +6,12 @@ const { default: axios } = require('axios');
 
 
 
-zokou({nomCom:"bot",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOptions)=>{
+zokou({nomCom:"njabulo",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("yes timnasa tmd I'm listening to you today.")}
+    {return repondre("*ʜɪ ᴀᴍ ɴᴊᴀʙᴜʟᴏ ᴊʙ, ʜᴏᴡ ᴍᴀʏ ɪ ʜᴇʟᴘ ʏᴏᴜ")}
     //var quest = arg.join(' ');
   try{
     
@@ -45,20 +45,20 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
 
 
 
-  zokou({ nomCom: "ai", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  zokou({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
       if (!arg || arg.length === 0) {
-        return repondre(`Please enter the necessary information to generate the image.`);
+        return repondre(`ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴇᴄᴇssᴀʀʏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴇ ɪᴍᴀɢᴇ.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
       const image = arg.join(' ');
-      const response = await axios.get(`https://samirxpikachuio.onrender.com/flux?prompt=${image}`);
+      const response = await axios.get(`http://api.maher-zubair.tech/ai/photoleap?q=${image}`);
       
       const data = response.data;
-      let caption = '*powered by BMW-MD*';
+      let caption = '*powered by Njabulo*';
       
       if (data.status == 200) {
         // Utiliser les données retournées par le service
@@ -73,12 +73,12 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
     }
   });
   
-  zokou({ nomCom: "timnasa", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  zokou({ nomCom: "ai", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
       if (!arg || arg.length === 0) {
-        return repondre(`Please support my channel 👉https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31 and asked your question.`);
+        return repondre(`Please ask a question.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
@@ -123,4 +123,5 @@ zokou({ nomCom: "gpt", reaction: "🤔", categorie: "IA" }, async (dest, zk, com
   });
 
 
-  
+
+        
