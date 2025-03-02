@@ -9,7 +9,7 @@ module.exports = async (context) => {
   `;
 
   // Define the image URL
-  let imagePath = 'https://files.catbox.moe/gggs3h.jpg.';
+  let imagePath = 'https://files.catbox.moe/2gegza.jpg';
 
   // Define the buttons
   const buttons = [
@@ -49,7 +49,7 @@ module.exports = async (context) => {
                   id: `${prefix}menu`, 
                 },
                 {
-                  header: "TIMNASA TMD",
+                  header: "KEITH MD",
                   title: "Appreciation",
                   description: "Regards to the owner",
                   id: `${prefix}speed`, 
@@ -67,7 +67,7 @@ module.exports = async (context) => {
   const buttonMessage = {
     image: { url: imagePath },
     caption: p,
-    footer: "© timnasa\n",
+    footer: "© Keith\n",
     headerType: 1,
     buttons: buttons,
     viewOnce: true,
@@ -78,10 +78,10 @@ module.exports = async (context) => {
         newsletterName: 'Keith Support',
       },
       externalAdReply: {
-        title: "timnasa Testing",
+        title: "Keith Testing",
         body: "Keith",
-        thumbnailUrl: `https://files.catbox.moe/gggs3h.jpg`,
-        sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
+        thumbnailUrl: `https://files.catbox.moe/12t71b.jpg`,
+        sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47",
         mediaType: 1,
         renderLargerThumbnail: true,
       },
