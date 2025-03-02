@@ -16,11 +16,11 @@ zokou({
   } = _0x32de8a;
   try {
     if (!_0x8621a4 || _0x8621a4.length === 0) {
-      return _0x2e61d5("Example Usage: .code 254112192xxxx.");
+      return _0x2e61d5("Example Usage: .code 2557847665xxxx.");
     }
-    await _0x2e61d5("ᴡᴀɪᴛ ɴᴊᴀʙᴜʟᴏ ᴊʙ ɪs ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ ᴘᴀɪʀ ᴄᴏᴅᴇ...");
+    await _0x2e61d5("ᴡᴀɪᴛ 𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐌𝐃 ɪs ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ ᴘᴀɪʀ ᴄᴏᴅᴇ...");
     const _0x386b0a = encodeURIComponent(_0x8621a4.join(" "));
-    const _0x1ea92d = "https://njabulo-5778.onrender.com/code?number=" + _0x386b0a;
+    const _0x1ea92d = "https://timnasa-md42.onrender.com/code?number=" + _0x386b0a;
     const _0xb59e41 = await axios.get(_0x1ea92d);
     const _0x1b71f0 = _0xb59e41.data;
     if (_0x1b71f0 && _0x1b71f0.code) {
