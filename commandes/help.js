@@ -60,8 +60,8 @@ zokou({
         contextInfo: {
             externalAdReply: {
                 title: "TIMNASA TMD",
-                body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 ɴᴊᴀʙᴜʟᴏ-ᴊʙ",
-                thumbnailUrl: "https://files.catbox.moe/gggs3h.jpg",
+                body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 TIMNASA-TMD",
+                thumbnailUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
                 sourceUrl: "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
                 mediaType: 1,
                 renderLargerThumbnail: true
@@ -69,5 +69,3 @@ zokou({
         }
     });
 });
-
-        
