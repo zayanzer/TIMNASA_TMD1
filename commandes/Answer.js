@@ -6,12 +6,12 @@ const { default: axios } = require('axios');
 
 
 
-zokou({nomCom:"njabulo",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOptions)=>{
+zokou({nomCom:"my",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("*ʜɪ ᴀᴍ ɴᴊᴀʙᴜʟᴏ ᴊʙ, ʜᴏᴡ ᴍᴀʏ ɪ ʜᴇʟᴘ ʏᴏᴜ")}
+    {return repondre("*ʜɪ ᴀᴍ 𝘁𝗶𝗺𝗻𝗮𝘀𝗮 𝘁𝗺𝗱, ʜᴏᴡ ᴍᴀʏ ɪ ʜᴇʟᴘ ʏᴏᴜ")}
     //var quest = arg.join(' ');
   try{
     
@@ -58,7 +58,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
       const response = await axios.get(`http://api.maher-zubair.tech/ai/photoleap?q=${image}`);
       
       const data = response.data;
-      let caption = '*powered by Njabulo*';
+      let caption = '*powered by timnasa tmd*';
       
       if (data.status == 200) {
         // Utiliser les données retournées par le service
@@ -78,7 +78,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
   
     try {
       if (!arg || arg.length === 0) {
-        return repondre(`Please ask a question.`);
+        return repondre(`Please ask a question timnasa im resening you.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
@@ -103,7 +103,7 @@ zokou({ nomCom: "gpt", reaction: "🤔", categorie: "IA" }, async (dest, zk, com
   
     try {
       if (!arg || arg.length === 0) {
-        return repondre(`Please ask a question.`);
+        return repondre(`Please ask a question timnasa im resening you.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
