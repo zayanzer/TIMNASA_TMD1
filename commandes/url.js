@@ -6,7 +6,7 @@ const path = require('path');
 const { cmd } = require("../command");
 
 cmd({
-  'pattern': "tourl",
+  'pattern': "ourl",
   'alias': ["imgtourl", "img2url", "url"],
   'react': '🖇',
   'desc': "Convert an image to a URL using imgbb.",
