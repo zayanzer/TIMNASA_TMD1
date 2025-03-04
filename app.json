@@ -1,14 +1,14 @@
 {
-  "name": "✧⁠LUCKY_MD✧ MULT DEVICE",
-  "description": "Lucky Whatsapp device bot made by FrediEzra to help Whatsapp users to enjoy while helping..",
+  "name": "𝚃𝙸𝙼𝙽𝙰𝚂𝙰-𝚃𝙼𝙳",
+  "description": "𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙼𝙳 Whatsapp device bot made by 𝚃𝙸𝙼𝙾𝚃𝙷𝚈 𝙳𝙴𝚃𝙴𝚂𝚃𝙴𝙳 to help Whatsapp users to enjoy while helping..",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://files.catbox.moe/7irwqn.jpeg",
-  "repository": "https://github.com/Fred1e/LUCKY_MD",
+  "logo": "https://files.catbox.moe/ixbkja.jpg",
+  "repository": "https://github.com/next55x/TIMNASA-TMD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -61,7 +61,7 @@
     },
     "AUTO_STATUS_TEXT": {
       "description": "type your genuine status message",
-      "value": "viewed ✅✅",
+      "value": "hello",
       "required": false
     },
     "AUTO_STATUS_REPLY": {
@@ -76,7 +76,7 @@
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "✧⁠LUCKY_MD✧",
+      "value": "✧TIMNASA_TMD✧",
       "required": false 
     },
     "PUBLIC_MODE": {
@@ -101,12 +101,12 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "FrediEzra",
+      "value": "TIMNASA-TECH",
       "required": false
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/7irwqn.jpeg",
+      "value": "https://files.catbox.moe/ixbkja.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -116,12 +116,12 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '255752593977')",
-      "value": "255752593977",
+      "value": "255784766591",
       "required": false
     },
     "WARN_COUNT": {
       "description": "Set the warning limit for warning commands",
-      "value": "5",
+      "value": "3",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
