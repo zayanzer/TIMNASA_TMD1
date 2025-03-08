@@ -1,5 +1,4 @@
-const {ezra}=require("../fredi/ezra")
-const {getContentType}=require("@whiskeysockets/baileys")
+
 
 
 
