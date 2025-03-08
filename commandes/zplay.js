@@ -1,8 +1,4 @@
 
-const { ezra } = require("../fredi/ezra");
-const axios = require('axios');
-const ytSearch = require('yt-search');
-
 // Define the command with aliases
 ezra({
   nomCom: "play",
@@ -31,8 +27,7 @@ ezra({
     const firstVideo = searchResults.videos[0];
     const videoUrl = firstVideo.url;
 
-    // Function to get download data from APIs
-    const getDownloadData = async (url) => {
+    // Function to get download data from  async (url) => {
       try {
         const response = await axios.get(url);
         return response.data;
