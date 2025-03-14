@@ -55,8 +55,8 @@
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "TIMNASA-TMD1",
-      "required": false 
+      "value": "ঔৣ⃕͜🌹Zayan🌹 ⃟༘✪͜͡࿐",
+      "required": true 
     },
     "PUBLIC_MODE": {
       "description": "Set 'yes' to make your bot public or 'no' to keep it private",
@@ -65,7 +65,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Insert your Heroku API key (required)",
-      "value": "",
+      "value": "HRKU-07360a14-53c1-4e1e-a907-f23084f0a6e4",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -80,12 +80,12 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "TIMNASA-TMD",
-      "required": false
+      "value": "ঔৣ⃕͜🌹Zayan🌹 ⃟༘✪͜͡࿐",
+      "required":true
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/bq7ym6.jpg",
+      "value": "https://files.catbox.moe/ax92lq.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -95,8 +95,8 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '255784766591')",
-      "value": "255784766591",
-      "required": false
+      "value": "601117508525",
+      "required": true
     },
     "WARN_COUNT": {
       "description": "Set the warning limit for warning commands",
