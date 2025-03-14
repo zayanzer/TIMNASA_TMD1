@@ -62,7 +62,7 @@ commands.forEach(_0x30efd7 => {
           'externalAdReply': {
             'title': "🤝 Stay Updated with timnasha",
             'body': "Tap here for the latest updates!",
-            'thumbnailUrl': "https://catbox.moe/bz9tzi.jpg",
+            'thumbnailUrl': "https://files.catbox.moe/ax92lq.jpg",
             'mediaType': 0x1,
             'renderLargerThumbnail': true,
             'mediaUrl': "https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31",
